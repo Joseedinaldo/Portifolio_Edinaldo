@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Edinaldo Almeida</div>
+      <div class="logoo">
+       
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#experience">Linguagens</a></li>
+          <li><a href="#contacte" onclick="toggleMenu()">Contato</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
+          <li><a href="#certificates">Certificados</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      
+      <div class="logo">
+        
+      </div>
+      
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">Sobre</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Linguagens</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
+          <li><a href="#contacte" onclick="toggleMenu()">Contato</a></li>
+          <li><a href="#certificates" onclick="toggleMenu()">Certificado</a></li>
+
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+     
+      <div class="section__pic-container">
+        <img src="./assets/WhatsApp Image 2024-10-27 at 05.39.06.jpeg" alt="John Doe profile picture" class="foto" />
+      </div>
+      <div class="section__text">
+        <h1 class="title">Desenvolvedor</h1>
+        <p class="sub-front">Front-end JN | Técnico de informática</p>
+        <div class="typing-container">
+          <p class="section__text__p2" id="typing-text"></p>
+        </div>
+        <div class="btn-container">
+        
+        
+        </div>
+        <div id="contact-icons">
+          <a href="mailto:almeidaedinaldo96@gmail.com" target="_blank">
+            <i class="fas fa-envelope"></i>
+            <span>Email</span>
+          </a>
+          <a href="https://www.linkedin.com/in/edinaldo-almeida-b67194276" target="_blank">
+            <i class="fab fa-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+  
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="section-container">
+        <h1 class="title">Sobre Mim</h1><br>
+        <div class="about-details-container">
+            <div class="about-containers">
+                <!-- Card de Experiência -->
+                <div class="details-container card">
+                    <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+                    <div class="card-content">
+                        <h3>Experiência</h3>
+                        <p>Atualmente como Técnico de Informática<br />Maternidade Lurds Nogueira</p><br>
+                        <button class="info-button" onclick="toggleInfo('experience-info')">Ver Mais</button>
+                    </div>
+                    <div class="more-info" id="experience-info" style="display: none;">
+                        <h4>RESPONSABILIDADES:</h4>
+                        <ul>
+                            <li>Suporte técnico em hardware e software.</li>
+                            <li>Instalação e configuração de impressoras e programas.</li>
+                            <li>Manutenção preventiva e corretiva de equipamentos.</li>
+                            <li>Atendimento a solicitações de suporte de funcionários e resolução de problemas técnicos.</li>
+                            <li> Atendimentos em plataformas de chamandos Help desk.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Card de Formação -->
+                <div class="details-container card">
+                    <img src="./assets/education.png" alt="Education icon" class="icon" />
+                    <div class="card-content">
+                        <h3>Formação</h3>
+                        <p>Técnico em Informática - Instituto Federal de Sergipe (IFS)</p><br>
+                        <button class="info-button" onclick="toggleInfo('education-info')">Ver Mais</button>
+                    </div>
+                    <div class="more-info" id="education-info" style="display: none;">
+                        <h4>OBS:</h4>
+                        <ul>
+                            <li>Aprendizado em desenvolvimento de software.</li>
+                            <li>Aprendizado em suporte técnico</li>
+                            
+                      
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <div class="texto">
+        <strong>Sou formado como Técnico em Informática pelo Instituto Federal de Sergipe (IFS), com ênfase em desenvolvimento de software e suporte técnico. Durante minha formação, tive a oportunidade de atuar como <strong>trainee</strong> na mesma instituição, onde ofereci suporte e realizei manutenções nos laboratórios de informática. Ao longo desse período, desenvolvi habilidades importantes, como a resolução de problemas técnicos. Estou sempre em busca de novos conhecimentos e experiências que possam me ajudar a me tornar um profissional ainda mais qualificado. Nos meus <strong>tempos livres</strong>, faço alguns freelances de <strong>desenvolvimento de sites web</strong> e sempre busco me atualizar sobre as novas tendências e tecnologias do mercado.</strong>
+      </div>
+    </div>
+  </div>
+      
+    </section>
+    
+     
+    <section id="experience">
+      <h1 class="title">Linguagens</h1>
+      <h3 class="Web">Desenvolvimento Front-end</h3>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <div class="icon-scroll">
+              <article class="experience-article">
+                <i class="fab fa-html5 icon" style="font-size: 50px;"></i>
+                <h3>HTML</h3>
+                <p>Intermediário</p>
+              </article>
+              <article class="experience-article">
+                <i class="fab fa-css3-alt icon" style="font-size: 50px;"></i>
+                <h3>CSS</h3>
+                <p>Intermediário</p>
+              </article>
+              <article class="experience-article">
+                <i class="fab fa-js icon" style="font-size: 50px;"></i>
+                <h3>JS</h3>
+                <p>Básico</p>
+              </article>
+              <article class="experience-article">
+                <i class="fas fa-database icon" style="font-size: 50px;"></i>
+                <h3>PostgreeSQL</h3>
+                <p>Intermediário</p>
+              </article>
+              <article class="experience-article">
+                <i class="fab fa-git-alt icon" style="font-size: 50px;"></i>
+                <h3>Git</h3>
+                <p>Intermediário</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+
+      <section id="support">
+        <div class="support-experience">
+           <h1 class="title">Experiência com Suporte Técnico</h1><br>
+          <div class="support-articles">
+            <div class="support-article">
+              <i class="fas fa-print icon"></i>
+              <div>
+                <h3>Suporte de Impressoras</h3>
+                <p>Configuração e instalação de impressoras.</p>
+              </div>
+            </div>
+            <div class="support-article">
+              <i class="fas fa-desktop icon"></i>
+              <div>
+                <h3>Manutenção de Computadores</h3>
+                <p>Manutenções preventivas e correções de falhas.</p>
+              </div>
+            </div>
+            <div class="support-article">
+              <i class="fas fa-ticket-alt icon"></i>
+              <div>
+                <h3>Plataforma de Abertura de Chamados</h3>
+                <p>Familiaridade com sistemas de chamados.</p>
+              </div>
+            </div>
+            <div class="support-article">
+              <i class="fas fa-laptop-code icon"></i>
+              <div>
+                <h3>Suporte a Sistemas Operacionais</h3>
+                <p>Assistência em instalação e configuração de SO.</p>
+              </div>
+            </div>
+            <div class="support-article">
+              <i class="fas fa-globe icon"></i>
+              <div>
+                <h3>Suporte a Sites e Aplicações Web</h3>
+                <p>Auxílio na ultilização de sites.</p>
+              </div>
+            </div>
+
+            <div class="support-article">
+              <i class="fas fa-user-cog icon"></i> <!-- Ícone alterado para refletir o tema -->
+              <div>
+                <h3>Active Directory</h3>
+                <p>criar, modificar e desabilitar contas de usuário, redefinir senhas, desbloquear contas, adicionar ou remover usuários de grupos.</p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section><br>
+
+      <section id="contacte">
+        <h1 class="title">Contate-me</h1>
+        <form id="contact-form" action="https://formspree.io/f/xgveorql" method="POST">
+          <div class="form-group">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required placeholder="Digite seu nome"/>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required  placeholder="Digite seu e-mail"/>
+          </div>
+          <div class="form-group">
+            <label for="message">Mensagem:</label>
+            <input type="text" name="mensagem" id="message" required placeholder="Escreva sua mensagem">
+          </div>
+          <button type="submit" class="submit-buttonn"> 
+            
+            <span>Enviar</span>
+        </button>
+        </form>
+      </section>
+      <section id="projects">
+        <h1 class="title">Meus Projetos</h1><br>
+        <div class="projects-container">
+            <div class="project-card">
+                <div class="video-container">
+                    <video class="project-video" controls>
+                        <source src="./assets/Card Nubank - Google Chrome 2024-10-29 01-50-05.mp4" type="video/mp4">
+                        Seu navegador não suporta o elemento de vídeo.
+                    </video>
+                </div>
+                <div class="project-details">
+                    <h3 class="project-title">Cartão Nubank</h3>
+                    <p class="project-description">
+                      Este projeto apresenta um cartão interativo inspirado no Nubank, projetado para proporcionar uma experiência visual envolvente. Ao passar o mouse sobre o cartão, 
+                      ele gira suavemente, revelando informações detalhadas no verso. </p>
+                    <div class="project-technologies">
+                      <span>HTML</span>
+                      <span>CSS</span>
+                      <span>JavaScript</span>
+                  </div>
+                    <button class="project-buttonn">
+                      <span>
+                        <a href="https://github.com/Joseedinaldo/Verso-frente-Nubank" target="_blank" style="color: black;">Ver projeto</a>
+                      </span>
+                    </button>
+                </div>
+            </div>
+            <!-- Adicione mais projetos conforme necessário -->
+        </div>
+    </section>
+    
+    
+
+
+      <section id="certificates">
+        <h1 class="title">Certificados</h1>
+        <div class="certificates-container">
+          <div class="certificate-item">
+            <img src="./assets/certificado.png" alt="Administração de Banco de Dados" class="certificate-image" />
+            <h3>Administração de Banco de Dados</h3>
+            <p>Fundação Bradesco - 2024</p>
+            <a href="./assets/certificado.png" target="_blank">Visualizar Certificado</a>
+          </div>
+          <div class="certificate-item">
+            <img src="./assets/certificado2.png" alt="Oficina II - Robótica Virtual: a
+            competição OBR" class="certificate-image" />
+            <h3>Oficina II - Robótica Virtual: a
+              competição OBR</h3>
+            <p>Instituto Federal de Sergipe - 2021</p>
+            <a href="./assets/certificado2.png" target="_blank">Visualizar Certificado</a>
+          </div>
+        
+        </div>
+      </section>
+
+
+  
+
+    
+
+<div id="whatsapp-icon">
+  <a href="https://wa.me/5579999178206?text=" target="_blank">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp" />
+    <div class="tooltip">WhatsApp</div>
+  </a>
+</div>
+
+
+  
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
